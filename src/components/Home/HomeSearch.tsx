@@ -21,9 +21,7 @@ export default function HomeSearch() {
     const data: Array<string> = await response.json();
     if(!data) return;
     const luckyResult = data.toString();
-    console.log(luckyResult)
-   
-    // router.push(`${searchTermQuery}${data}`)
+    router.push(`${searchTermQuery}${data}`)
   }
 
   return (
