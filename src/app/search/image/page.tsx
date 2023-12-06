@@ -1,5 +1,5 @@
 export default function Images() {
     return (
-       <div>Image Page</div> 
+        <div>Image Page</div> 
     )
 }
