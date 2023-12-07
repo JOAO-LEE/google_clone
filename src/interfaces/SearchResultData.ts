@@ -1,11 +1,12 @@
 interface SearchInfoData {
-    searchTime: number,
-    formattedSearchTime: string,
-    totalResults: string,
+    searchTime: number
+    formattedSearchTime: string
+    totalResults: string
     formattedTotalResults: string
 }
 
 interface ResultData {
+    kind: string
     title: string
     htmlTitle: string
     link: string
@@ -18,15 +19,39 @@ interface ResultData {
 }
 
 interface SearchDataResponse {
-    kind: string,
+    kind: string
     url: {
-    type: string,
+    type: string
     template: string
-  },
-    queries: { request: [ [Object] ], nextPage: [ [Object] ] },
-    context: { title: 'goo-nextjs14' },
-    searchInformation?: SearchInfoData,
+  }
+    queries: { request: [ [Object] ], nextPage: [ [Object] ] }
+    context: { title: 'goo-nextjs14' }
+    searchInformation?: SearchInfoData
     items: ResultData[]
 }
 
-export type { SearchInfoData, ResultData, SearchDataResponse }
+interface ImageData {
+    image: {
+        contextLink: string
+        height: number
+        width: number
+        byteSize: number
+        thumbnailLink: string,
+        thumbnailHeight: number,
+        thumbnailWidth: number
+    }
+}
+
+interface ResultImageData extends ResultData {
+    mime: string
+    fileFormat: string
+    image: ImageData
+}
+
+
+
+interface SearchImageDataResponse extends SearchDataResponse {
+   items: ResultImageData[]
+}
+
+export type { SearchInfoData, ResultData, SearchDataResponse, ImageData, ResultImageData, SearchImageDataResponse}

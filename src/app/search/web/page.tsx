@@ -1,7 +1,6 @@
 import NoResult from "@/components/NoResult/NoResult";
 import WebSearchResults from "@/components/Results/WebSearchResults";
 import { ResultData, SearchDataResponse } from "@/interfaces/SearchResultData";
-import Link from "next/link";
 
 
 export default async function WebSearch({ searchParams }: { searchParams: any }) {
@@ -17,7 +16,7 @@ export default async function WebSearch({ searchParams }: { searchParams: any })
 
     if (!results) {
         return (
-            <NoResult/>
+            <NoResult />
         )
     }
 

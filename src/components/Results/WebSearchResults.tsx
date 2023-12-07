@@ -3,7 +3,6 @@ import Parser from 'html-react-parser';
 import { ResultData, SearchDataResponse } from '@/interfaces/SearchResultData';
 
 export default function WebSearchResults({ results }: { results: SearchDataResponse }) {
-    console.log(results)
     return (
         <section 
         className="w-full mx-auto px-3 pb-24 sm:pl-[5%] md:pl-[14%] lg:pl-52">
