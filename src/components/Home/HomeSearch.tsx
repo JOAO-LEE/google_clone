@@ -5,13 +5,13 @@ import { BsFillMicFill } from 'react-icons/bs'
 import { useRouter } from 'next/navigation';
 const searchTermQuery = "/search/web?searchTerm="
 export default function HomeSearch() {
-  const [inputValue, setInputValue] = useState<any>();
+  const [inputValue, setInputValue] = useState<string>();
   const [randomWordLoading, setRandomWordLoading] = useState<boolean>(false);
   const router = useRouter();
 
   const handleSubmit = (e: any) => {
     e.preventDefault()
-    if (!inputValue.trim()) return;
+    if (!inputValue?.trim()) return;
     router.push(`${searchTermQuery}${inputValue}`)
   }
 
@@ -21,7 +21,7 @@ export default function HomeSearch() {
     const data: Array<string> = await response.json();
     if(!data) return;
     const luckyResult = data.toString();
-    router.push(`${searchTermQuery}${data}`)
+    router.push(`${searchTermQuery}${luckyResult}`)
   }
 
   return (
