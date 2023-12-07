@@ -1,15 +1,18 @@
 import WebSearchResults from "@/components/Results/WebSearchResults";
+import { ResultData, SearchDataResponse } from "@/interfaces/SearchResultData";
 import Link from "next/link";
+
 
 export default async function Web({ searchParams }: { searchParams: any }) {
     const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}`);
+    
     
     if (!response.ok) {
         throw new Error("Something went wrong.");
     }
 
-    const data = await response.json();
-    const results = data.items;
+    const data: SearchDataResponse = await response.json();
+    const results: Array<ResultData> = data.items;
 
     if (!results) {
         return (
@@ -31,10 +34,10 @@ export default async function Web({ searchParams }: { searchParams: any }) {
     return (
         <>
         {
-            results && (
-              <section>
-                <WebSearchResults results={data}/>
-              </section>  
+            results 
+            && 
+            (
+                <WebSearchResults results={data}/>  
             )
         }
         </>
