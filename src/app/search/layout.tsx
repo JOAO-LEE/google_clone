@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Google Clone',
   description: 'Goggle clone created using NextJs 14',
   icons: {
-    icon: "./icons/icon.svg"
+    icon: "../icons/icon.svg"
   }
 }
 
