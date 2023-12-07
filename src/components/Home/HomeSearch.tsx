@@ -3,16 +3,18 @@ import { useState } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai'
 import { BsFillMicFill } from 'react-icons/bs'
 import { useRouter } from 'next/navigation';
-const searchTermQuery = "/search/web?searchTerm="
+
 export default function HomeSearch() {
   const [inputValue, setInputValue] = useState<string>();
   const [randomWordLoading, setRandomWordLoading] = useState<boolean>(false);
   const router = useRouter();
 
+  const searchTermQuery = "/search/web?searchTerm=";
+  
   const handleSubmit = (e: any) => {
-    e.preventDefault()
+    e.preventDefault();
     if (!inputValue?.trim()) return;
-    router.push(`${searchTermQuery}${inputValue}`)
+    router.push(`${searchTermQuery}${inputValue}`);
   }
 
   const randomSearch = async (e: any) => {
@@ -21,7 +23,7 @@ export default function HomeSearch() {
     const data: Array<string> = await response.json();
     if(!data) return;
     const luckyResult = data.toString();
-    router.push(`${searchTermQuery}${luckyResult}`)
+    router.push(`${searchTermQuery}${luckyResult}`);
   }
 
   return (
