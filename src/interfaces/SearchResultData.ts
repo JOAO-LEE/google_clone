@@ -31,15 +31,13 @@ interface SearchDataResponse {
 }
 
 interface ImageData {
-    image: {
-        contextLink: string
-        height: number
-        width: number
-        byteSize: number
-        thumbnailLink: string,
-        thumbnailHeight: number,
-        thumbnailWidth: number
-    }
+    contextLink: string
+    height: number
+    width: number
+    byteSize: number
+    thumbnailLink: string,
+    thumbnailHeight: number,
+    thumbnailWidth: number
 }
 
 interface ResultImageData extends ResultData {
@@ -48,10 +46,8 @@ interface ResultImageData extends ResultData {
     image: ImageData
 }
 
-
-
 interface SearchImageDataResponse extends SearchDataResponse {
    items: ResultImageData[]
 }
 
-export type { SearchInfoData, ResultData, SearchDataResponse, ImageData, ResultImageData, SearchImageDataResponse}
+export type { SearchInfoData, ResultData, SearchDataResponse, ImageData, ResultImageData, SearchImageDataResponse }
