@@ -34,9 +34,9 @@ export default function ImageSearchResults({ results } : { results: SearchImageD
                     ))
                 }
             </div>
-            <div>
+            <div className="ml-16">
                 <PaginationButtons />
-            </div>    
+            </div>
         </section>
     )
 }

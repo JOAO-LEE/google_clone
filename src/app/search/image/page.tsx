@@ -4,7 +4,8 @@ import { ResultImageData, SearchImageDataResponse } from "@/interfaces/SearchRes
 
 
 export default async function ImageSearch({ searchParams }: { searchParams: any }) {
-    const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image`);
+    const startIndex = searchParams.start || "1";
+    const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image&start=${startIndex}`);
     if (!response.ok) {
         throw new Error("Something went wrong.");
     }

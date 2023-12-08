@@ -32,7 +32,7 @@ export default function PaginationButtons() {
                 )
             }
             { 
-                startIndex <= 99 
+                startIndex <= 90 
                 && 
                 (    
                     <Link 
