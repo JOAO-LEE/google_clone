@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import Parser from 'html-react-parser';
 import { ResultData, SearchDataResponse } from '@/interfaces/SearchResultData';
+import PaginationButtons from '../PaginationButtons/PaginationButtons';
 
 export default function WebSearchResults({ results }: { results: SearchDataResponse }) {
+    console.log(results.items)
     return (
         <section 
-        className="w-full mx-auto px-3 pb-24 sm:pl-[5%] md:pl-[14%] lg:pl-52">
+        className="w-full mx-auto px-3 pb-40 sm:pb-24 sm:pl-[5%] md:pl-[14%] lg:pl-52">
             <p
              className="text-gray-600 text-sm mb-5 mt-3">About {results.searchInformation?.formattedTotalResults} results ({results.searchInformation?.formattedSearchTime})</p>
             {results.items?.map((result: ResultData) => (
@@ -29,9 +31,10 @@ export default function WebSearchResults({ results }: { results: SearchDataRespo
                             {result.title}
                         </Link>
                     </div>
-                    <p className="text-gray-600">{Parser(result.htmlSnippet)}</p>
+                    <p className="text-gray-600">{Parser(result?.htmlSnippet)}</p>
                 </div>
             ))}
+            <PaginationButtons />
         </section>
     )
 }
