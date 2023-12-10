@@ -26,7 +26,7 @@ Since I already had experience with React.Js projects, I decided to get to know 
 ## Getting Started
 To clone and run this project locally, firstly: 
 
-1. Ensure you have [**Node.js**](https://nodejs.org/en) installed, with a minimum version of `18.17.x` or a later stable release;
+1. Ensure you have [**Node.js**](https://nodejs.org/en) installed, with a minimum version of `18.x` or a later stable release;
 2. <details>
     <summary>Get a free Google Custom Search API key;</summary>
     <p>In order to identify your application client, you will:</p>
