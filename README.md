@@ -107,7 +107,7 @@ Also, it's worth noting that this project was built with [**Next.js 14**](https:
 ### Styles, Icons and Formatting
 To style the project, it was employed [**Tailwind CSS**](https://tailwindcss.com/), a CSS framework which provides classes to style HTML elements, contributing to a more efficient development process. \
 Additionally, for the integration of icons, [**React Icons**](https://react-icons.github.io/react-icons/) was employed—an extensive library featuring a diverse collection of icons to enhance the overall user experience. \
-In order to achieve the boldened search term in each result description, [**html-react-parser**](https://www.npmjs.com/package/html-react-parser) was employed, once Google search API brings a property called `htmlSnippet` for this purpose. \
+In order to achieve the boldened search term in each result description, [**html-react-parser**](https://www.npmjs.com/package/html-react-parser) was employed, once Google search API brings a property called `htmlSnippet` for this purpose. 
 
 <details>
   <summary>See the example below</summary>
