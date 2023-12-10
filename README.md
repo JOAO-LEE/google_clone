@@ -12,7 +12,7 @@ Since I already had experience with React.Js projects, I decided to get to know 
 </div>
 <div align="center">
   <details>
-    <summary>Search functionality</summary>
+    <summary>See the details</summary>
       <div display="flex">
         <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/a75fcbb9-3fcb-4c56-b58b-d40795ec3b5e" width="375" alt="Google web search loading"  title="Google web search loading"/>
         <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/06541afc-6e5c-43cd-9e83-0c8c8af2801a" width="375" alt="Google image search loading"  title="Google image search loading"/>
