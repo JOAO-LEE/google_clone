@@ -13,7 +13,7 @@ Since I already had experience with React.Js projects, I decided to get to know 
 <div align="center">
   <details>
     <summary>Search functionality</summary>
-      <div style="display: flex">
+      <div display="flex">
         <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/a75fcbb9-3fcb-4c56-b58b-d40795ec3b5e" width="465px" alt="Google web search loading"  title="Google web search loading"/>
         <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/06541afc-6e5c-43cd-9e83-0c8c8af2801a" width="465px" alt="Google image search loading"  title="Google image search loading"/>
         <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/066ec785-116b-40c2-91f7-706549f72cc5" width="465px" alt="Google web search results"  title="Google web search results"/>
@@ -31,9 +31,12 @@ To clone and run this project locally, firstly:
     <summary>Get a free Google Custom Search API key;</summary>
     <p>In order to identify your application client, you will:</p>
     <ul>
-      <li>need an <b><a href="https://developers.google.com/custom-search/v1/using_rest?hl=en">API key</a></b> to receive data. This requires a Google account;
-        <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/8bbf817c-b077-4a0a-9445-7a8e64ce21ef" alt="API key page screenshot" title="API key page screenshot">
-       <em>https://developers.google.com/custom-search/v1/using_rest?hl=en</em>
+      <li>
+        need an <b><a href="https://developers.google.com/custom-search/v1/using_rest?hl=en">API key</a></b> to receive data. This requires a Google account;
+         <figure>
+          <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/8bbf817c-b077-4a0a-9445-7a8e64ce21ef" alt="API key page screenshot" title="API key page screenshot">
+          <figcaption>https://developers.google.com/custom-search/v1/using_rest?hl=en</figcaption>
+        </figure>
       </li>
       <li>Create an <code>.env</code> file in the root of the project and assign your API key value to the corresponding environment variable;<br>
         You can name it however you would like.<br>
@@ -46,11 +49,14 @@ To clone and run this project locally, firstly:
 
 3.  <details>
       <summary>Get a Context Key;</summary>
-      <p>You will need to set up a Programming Search Engine. This means you will have to: 
+      <p>You will need to set up a <b>Programming Search Engine</b>. This means you will have to: 
       <ul>
-        <li><b><a href="https://programmablesearchengine.google.com/controlpanel/create?hl=en">Create a project</a></b> - choose to search the entire web;<br>
-          <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/103f8f8b-8d02-45d8-b229-9a2e60eb7082" alt="Context key page screenshot" title="Context key page screenshot">
-          <em>https://programmablesearchengine.google.com/controlpanel/create?hl=en</em>
+        <li>
+          <b><a href="https://programmablesearchengine.google.com/controlpanel/create?hl=en">Create a project</a></b> - choose to search the entire web;<br>
+        <figure>
+         <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/103f8f8b-8d02-45d8-b229-9a2e60eb7082" alt="Context key page screenshot" title="Context key page screenshot">
+            <figcaption>https://programmablesearchengine.google.com/controlpanel/create?hl=en</figcaption>
+        </figure>
         </li>
         <li>In your <code>.env</code> file, assign your context key value to the corresponding environment variable;<br>
            You can name it however you would like.<br>
@@ -95,9 +101,10 @@ To clone and run this project locally, firstly:
   </details> 
 
 ## Development
+### Stack and Language Decision
 Moreover, while Sahand instructs the project using JavaScript, I've chose deliberately to implement it using TypeScript. This decision not only eases the development process with enhanced type safety, but also aligns with the rising trend and widespread adoption of TypeScript in the developer community. \
-Also, it's worth noting that this project was built with [Next.js 14](https://nextjs.org/blog/next-14), while Sahand utilized its [earlier version](https://nextjs.org/blog/next-13) in the course.
-### Styles & Icons
+Also, it's worth noting that this project was built with [**Next.js 14**](https://nextjs.org/blog/next-14), while Sahand utilized its [**earlier version**](https://nextjs.org/blog/next-13) in the course.
+### Styles, Icons and Formatting
 To style the project, it was employed [**Tailwind CSS**](https://tailwindcss.com/), a CSS framework which provides classes to style HTML elements, contributing to a more efficient development process. \
 Additionally, for the integration of icons, [**React Icons**](https://react-icons.github.io/react-icons/) was employed—an extensive library featuring a diverse collection of icons to enhance the overall user experience. \
 In order to achieve the boldened search term in each result description, [**html-react-parser**](https://www.npmjs.com/package/html-react-parser) was employed, once Google search API brings a property called `htmlSnippet` for this purpose. \
