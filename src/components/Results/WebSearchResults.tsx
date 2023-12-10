@@ -4,7 +4,6 @@ import { ResultData, SearchDataResponse } from '@/interfaces/SearchResultData';
 import PaginationButtons from '../PaginationButtons/PaginationButtons';
 
 export default function WebSearchResults({ results }: { results: SearchDataResponse }) {
-    console.log(results.items)
     return (
         <section 
         className="w-full mx-auto px-3 pb-40 sm:pb-24 sm:pl-[5%] md:pl-[14%] lg:pl-52">
