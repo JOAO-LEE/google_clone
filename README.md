@@ -2,9 +2,22 @@
 ## Introduction
 Since I already had experience with React.Js projects, I decided to get to know one of it's *"meta frameworks"*, and coincidentally, I got a [beginner-friendly free course](https://www.udemy.com/course/react-js-tutorial/) on Udemy by [Sahand Gavidel](https://www.sahandghavidel.com/), where he guides through the fundamentals of [Next.js](https://nextjs.org/) with a hands-on approach. The course includes step-by-step instructions for building four clone projects, with one of them replicating the Google interface.
 
-<div style="display: flex">
-  <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/8feed7da-b0ee-4a97-ae1b-83526c0dcb28" width="500px" />
-  
+<div align="center">
+  <div>
+    <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/8feed7da-b0ee-4a97-ae1b-83526c0dcb28" width="700px" />
+  </div>
+</div>
+<div align="center">
+  <details>
+    <summary>Search functionality</summary>
+      <div style="display: flex">
+        <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/a75fcbb9-3fcb-4c56-b58b-d40795ec3b5e" width="465px" alt="Google web search loading"  title="Google web search loading"/>
+        <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/06541afc-6e5c-43cd-9e83-0c8c8af2801a" width="465px" alt="Google image search loading"  title="Google image search loading"/>
+        <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/066ec785-116b-40c2-91f7-706549f72cc5" width="465px" alt="Google web search results"  title="Google web search results"/>
+        <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/0588eda1-5b6f-434c-ba64-bb6186fe3860" width="465px" alt="Google image searc results"  title="Google image search results"/>
+        <p align="start">⚠ It's important to state that some functionalities such as <em>"Sign in"</em>, <em>"Microphone input"</em> and <em>"Settings" were not implemented for now, since this application focus on its search functionality. However, I intend to implement some other functionalities.</em></p>
+      </div>
+  </details>
 </div>
 
 ## Getting Started
@@ -16,8 +29,8 @@ To clone and run this project locally, firstly:
     <p>In order to identify your application client, you will:</p>
     <ul>
       <li>need an <b><a href="https://developers.google.com/custom-search/v1/using_rest?hl=en">API key</a></b> to receive data. This requires a Google account;
-        <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/8bbf817c-b077-4a0a-9445-7a8e64ce21ef" alt="API key page screenshot">
-        <em>https://developers.google.com/custom-search/v1/using_rest?hl=en</em>
+        <img src="https://github.com/JOAO-LEE/google_clone/assets/100000031/8bbf817c-b077-4a0a-9445-7a8e64ce21ef" alt="API key page screenshot title=""">
+       <em>https://developers.google.com/custom-search/v1/using_rest?hl=en</em>
       </li>
       <li>Create an <code>.env</code> file in the root of the project and assign your API key value to the corresponding environment variable;<br>
         You can name it however you would like.<br>
