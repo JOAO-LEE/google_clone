@@ -3,7 +3,7 @@
 </div>
 
 ## Introduction
-Since I already had experience with React.Js projects, I decided to get to know one of it's *"meta frameworks"*, and coincidentally, I got a [beginner-friendly free course](https://www.udemy.com/course/react-js-tutorial/) on Udemy by [Sahand Gavidel](https://www.sahandghavidel.com/), where he guides through the fundamentals of [Next.js](https://nextjs.org/) with a hands-on approach. The course includes step-by-step instructions for building four clone projects, with one of them replicating the Google interface.
+Since I already had experience with React.Js projects, I decided to get to know one of it's *"meta frameworks"*, and coincidentally, I got a [beginner-friendly course](https://www.udemy.com/course/react-js-tutorial/) on Udemy by [Sahand Gavidel](https://www.sahandghavidel.com/), where he guides through the fundamentals of [Next.js](https://nextjs.org/) with a hands-on approach. The course includes step-by-step instructions for building four clone projects, with one of them replicating the Google interface.
 
 <div align="center">
   <div>
